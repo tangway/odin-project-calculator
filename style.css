@@ -1,0 +1,35 @@
+#clear {
+  border: 10px solid green;
+}
+
+#number1 {
+  border: 10px solid red;
+}
+
+#number2 {
+  border: 10px solid red;
+}
+
+#number3 {
+  border: 10px solid red;
+}
+
+#plus {
+  border: 10px solid green;
+}
+
+#minus {
+  border: 10px solid green;
+}
+
+#multiply {
+  border: 10px solid green;
+}
+
+#divide {
+  border: 10px solid green;
+}
+
+#equals {
+  border: 10px solid green;
+}

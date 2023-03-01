@@ -43,6 +43,13 @@ let display = document.querySelector('input[name="equalDisplay"]');
 const div1 = document.querySelector("#number1");
 const div2 = document.querySelector("#number2");
 const div3 = document.querySelector("#number3");
+const div4 = document.querySelector("#number4");
+const div5 = document.querySelector("#number5");
+const div6 = document.querySelector("#number6");
+const div7 = document.querySelector("#number7");
+const div8 = document.querySelector("#number8");
+const div9 = document.querySelector("#number9");
+const div0 = document.querySelector("#number0");
 
 const plus = document.querySelector("#plus");
 const minus = document.querySelector("#minus");
@@ -72,6 +79,7 @@ const storeValue = function (num) {
     console.log(`inside else if (value2Store && !result)`);
     value2Store = value2Store + num;
   } else if (Number(display.value) === result) {
+    console.log(`inside else if (Number(display.value) === result)`)
     value2Store = num
   } else if (operatorCounter > 1 && result) {
     // when value2Store already is assigned a digit and there is
@@ -137,6 +145,34 @@ div3.addEventListener("click", () => {
   storeValue("3")
   displayValue("3")
 });
+div4.addEventListener("click", () => {
+  storeValue("4")
+  displayValue("4")
+});
+div5.addEventListener("click", () => {
+  storeValue("5")
+  displayValue("5")
+});
+div6.addEventListener("click", () => {
+  storeValue("6")
+  displayValue("6")
+});
+div7.addEventListener("click", () => {
+  storeValue("7")
+  displayValue("7")
+});
+div8.addEventListener("click", () => {
+  storeValue("8")
+  displayValue("8")
+});
+div9.addEventListener("click", () => {
+  storeValue("9")
+  displayValue("9")
+});
+div0.addEventListener("click", () => {
+  storeValue("0")
+  displayValue("0")
+});
 
 
 /*THE OPERATORS */
@@ -157,7 +193,7 @@ plus.addEventListener("click", () => {
   // already assigned values then run equalsOperation
   
   if (Number(display.value) === result) {
-    operator = "+"
+    operator = "+";
   } else if (value1Store && value2Store && operator) {
     console.log(`inside else if (value1Store && value2Store && operator)`);
     equalsOperation();
@@ -201,5 +237,12 @@ module.exports = {
   storeValue,
   div1,
   div2,
-  div3
+  div3,
+  div4,
+  div5,
+  div6,
+  div7,
+  div8,
+  div9,
+  div0
 }

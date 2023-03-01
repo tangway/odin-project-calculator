@@ -2,15 +2,16 @@
   border: 10px solid green;
 }
 
-#number1 {
-  border: 10px solid red;
-}
-
-#number2 {
-  border: 10px solid red;
-}
-
-#number3 {
+#number1,
+#number2,
+#number3,
+#number4,
+#number5,
+#number6,
+#number7,
+#number8,
+#number9,
+#number0 {
   border: 10px solid red;
 }
 

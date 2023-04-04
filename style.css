@@ -1,3 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(198, 198, 198);
+}
+
+#container {
+  display: grid;
+  /* align-content: center; */
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(4, minxmax(80px, 100px));
+  gap: 6px;
+  min-width: 300px;
+  min-height: 400px;
+  border: 15px;
+  border-radius: 20px;
+  text-align: center;
+  /* align-items: center;  */
+}
+
+#display {
+  grid-column: 1 / -1;
+}
+
+/* The line grid-column: 1 / -1; is used to place a grid item in a 
+CSS Grid Layout, spanning it from the first column line to the last 
+column line. The grid-column property is a shorthand for 
+grid-column-start and grid-column-end properties, which define the 
+starting and ending column lines for a grid item developer.mozilla.org. */
+
 #clear {
   border: 10px solid green;
 }
@@ -17,6 +61,7 @@
 
 #plus {
   border: 10px solid green;
+  grid-row: span 2;
 }
 
 #minus {
@@ -32,5 +77,14 @@
 }
 
 #equals {
+  border: 10px solid green;
+  grid-row: span 2;
+}
+
+#back {
+  border: 10px solid green;
+}
+
+#decimal {
   border: 10px solid green;
 }

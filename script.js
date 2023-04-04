@@ -128,10 +128,11 @@ const clearFunc = function() {
 //   }
 // });
 
-div1.addEventListener("click", () => {
+div1.addEventListener("click", (event) => {
   lastButtonPressedCheck();
   storeValue("1");
   displayValue("1");
+  console.log(event)
 });
 div2.addEventListener("click", () => {
   lastButtonPressedCheck();

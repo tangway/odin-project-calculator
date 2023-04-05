@@ -15,12 +15,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgb(198, 198, 198);
+  background-color: rgb(135, 135, 135);
 }
 
 #container {
   display: grid;
-  /* align-content: center; */
   grid-template-columns: repeat(5, 80px);
   grid-template-rows: repeat(4, minxmax(80px, 100px));
   gap: 6px;
@@ -29,14 +28,17 @@ body {
   border: 15px;
   border-radius: 20px;
   text-align: center;
-  /* align-items: center;  */
 }
+
 
 #display {
   grid-column: 1 / -1;
+  text-align: end;
+  font-size: xx-large;
+  font-weight: 500;
 }
 
-/* The line grid-column: 1 / -1; is used to place a grid item in a 
+/* The line ;grid-column: 1 / -1; is used to place a grid item in a 
 CSS Grid Layout, spanning it from the first column line to the last 
 column line. The grid-column property is a shorthand for 
 grid-column-start and grid-column-end properties, which define the 

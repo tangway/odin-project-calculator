@@ -25,7 +25,7 @@ body {
   gap: 6px;
   min-width: 300px;
   min-height: 400px;
-  border: 15px;
+  border: 15px solid;
   border-radius: 20px;
   text-align: center;
 }
@@ -43,6 +43,12 @@ CSS Grid Layout, spanning it from the first column line to the last
 column line. The grid-column property is a shorthand for 
 grid-column-start and grid-column-end properties, which define the 
 starting and ending column lines for a grid item developer.mozilla.org. */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #clear {
   border: 10px solid green;
